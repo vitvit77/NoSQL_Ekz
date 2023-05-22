@@ -1,0 +1,101 @@
+````
+API Car
+````
+````
+POST: http://localhost:8080/api/service/car
+````
+````
+REQUEST:
+{
+    "number": "AE1234AE",
+    "brand": "MAZDA",
+    "model": "CX-5",
+    "engineVolume": 2.5,
+    "type": "CROSSOVER",
+    "color": "white",
+    "description": "Good car",
+    "year": 2020,
+    "price": 500000.00,
+    "photoUrl": "image.jpg",
+    "isAutomaticTransmission": true
+}
+````
+````
+RESPONSE:
+{
+    "id": "646b5753b7cc364f25e937d0",
+    "number": "AE1234AE",
+    "brand": "MAZDA",
+    "type": "CROSSOVER",
+    "color": "white",
+    "isAutomaticTransmission": true,
+    "engineVolume": 2.5,
+    "year": 2020,
+    "price": 500000.0,
+    "description": "Good car",
+    "photoUrl": "image.jpg"
+}
+````
+````
+GET: http://localhost:8080/api/service/car?documentId=646b5753b7cc364f25e937d0
+````
+````
+RESPONSE:
+{
+    "id": "646b5753b7cc364f25e937d0",
+    "number": "AE1234AE",
+    "brand": "MAZDA",
+    "type": "CROSSOVER",
+    "color": "white",
+    "isAutomaticTransmission": true,
+    "engineVolume": 2.5,
+    "year": 2020,
+    "price": 500000.0,
+    "description": "Good car",
+    "photoUrl": "image.jpg"
+}
+````
+````
+PUT: http://localhost:8080/api/service/car?documentId=646b5753b7cc364f25e937d0
+````
+````
+REQUEST:
+{
+    "number": "AE1234AE",
+    "brand": "MAZDA",
+    "model": "CX-5",
+    "engineVolume": 2.5,
+    "type": "CROSSOVER",
+    "color": "green",
+    "description": "Good car 123",
+    "year": 2020,
+    "price": 1500000.00,
+    "photoUrl": "image.jpg",
+    "isAutomaticTransmission": true
+}
+````
+````
+RESPONSE:
+{
+    "id": "646b5753b7cc364f25e937d0",
+    "number": "AE1234AE",
+    "brand": "MAZDA",
+    "type": "CROSSOVER",
+    "color": "green",
+    "isAutomaticTransmission": true,
+    "engineVolume": 2.5,
+    "year": 2020,
+    "price": 1500000.0,
+    "description": "Good car 123",
+    "photoUrl": "image.jpg"
+}
+````
+````
+DELETE: http://localhost:8080/api/service/car?documentId=646b5753b7cc364f25e937d0
+````
+````
+RESPONSE:
+{
+    "result": true
+}
+````
